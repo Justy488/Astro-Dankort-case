@@ -1,19 +1,27 @@
-<header>
-  <style>
-    body {
-      padding-top: 80px;
-    }
-  </style>
+---
+const currentPath = Astro.url.pathname;
+---
 
-  <a href="/" class="logo">
+<header>
+  <a href="/index" class="logo">
     <img src="/pictures/dankortlogo.svg" alt="Dankort logo" />
   </a>
 
-  <nav>
-    <a href="/naturfonden" data-da="Naturfonden" data-en="Nature Fund">Naturfonden</a>
-    <a href="/fordele" data-da="Fordele" data-en="Benefits">Fordele</a>
-    <a href="/index" data-da="Hjem" data-en="Home">Hjem</a>
+  <nav id="navMenu">
+    <ul class="menu">
+      <li>
+        <a href="/naturfonden" class={currentPath === "/naturfonden" ? "active" : ""} data-da="Naturfonden" data-en="Nature Fund"> Naturfonden </a>
+      </li>
+      <li>
+        <a href="/benefits" class={currentPath === "/fordele" ? "active" : ""} data-da="Fordele" data-en="Benefits"> Fordele </a>
+      </li>
+      <li>
+        <a href="/index" class={currentPath === "/index" ? "active" : ""} data-da="Hjem" data-en="Home"> Hjem </a>
+      </li>
+    </ul>
+  </nav>
 
+  <div class="header-actions">
     <div class="language-dropdown">
       <button class="language-current" id="languageToggle" type="button">
         <img id="currentFlag" src="/pictures/danishflagg.png" alt="Dansk flag" />
@@ -31,149 +39,21 @@
         </button>
       </div>
     </div>
-  </nav>
+
+    <button class="burger" id="burgerBtn" type="button" aria-label="Open menu">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </button>
+  </div>
 </header>
 
-<style>
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2.5rem;
-    background: transparent;
-  }
-  .logo img {
-    height: 48px;
-    width: auto;
-  }
+<script>
+  const burger = document.querySelector("#burgerBtn");
+  const nav = document.querySelector("#navMenu");
 
-  nav {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  nav a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 16px;
-  }
-
-  nav a:hover {
-    text-decoration: underline;
-    color: #bac89e;
-  }
-
-  .flag {
-    height: 36px;
-    object-fit: cover;
-  }
-  .language-dropdown {
-    position: relative;
-    display: inline-block;
-  }
-
-  .language-current {
-    border: none;
-    background: transparent;
-    padding: 0;
-    cursor: pointer;
-  }
-
-  .language-current img {
-    height: 36px;
-    object-fit: cover;
-    display: block;
-  }
-
-  .language-menu {
-    display: none;
-    position: absolute;
-    top: 48px;
-    right: 0;
-    min-width: 150px;
-    background: white;
-    border-radius: 16px;
-    padding: 8px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
-    z-index: 200;
-  }
-
-  .language-menu.open {
-    display: block;
-  }
-
-  .language-option {
-    width: 100%;
-    border: none;
-    background: transparent;
-    padding: 10px 12px;
-    border-radius: 12px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 15px;
-    text-align: left;
-  }
-
-  .language-option img {
-    height: 24px;
-    object-fit: cover;
-  }
-
-  .language-option:hover {
-    background-color: #f2eee6;
-  }
-</style>
-<!-- <script>
-  const languageToggle = document.querySelector("#languageToggle");
-  const languageMenu = document.querySelector("#languageMenu");
-  const languageOptions = document.querySelectorAll(".language-option");
-  const currentFlag = document.querySelector("#currentFlag");
-
-  const flags = {
-    da: "/pictures/danishflagg.png",
-    en: "/pictures/englishflag.png",
-  };
-
-  function setLanguage(lang) {
-    document.querySelectorAll("[data-da][data-en]").forEach((element) => {
-      element.textContent = element.dataset[lang];
-    });
-
-    document.documentElement.lang = lang;
-    localStorage.setItem("language", lang);
-
-    if (currentFlag) {
-      currentFlag.src = flags[lang];
-      currentFlag.alt = lang === "da" ? "Dansk flag" : "English flag";
-    }
-  }
-
-  const savedLanguage = localStorage.getItem("language") || "da";
-  setLanguage(savedLanguage);
-
-  languageToggle?.addEventListener("click", () => {
-    languageMenu?.classList.toggle("open");
+  burger?.addEventListener("click", () => {
+    burger.classList.toggle("active");
+    nav?.classList.toggle("active");
   });
-
-  languageOptions.forEach((option) => {
-    option.addEventListener("click", () => {
-      const lang = option.dataset.lang;
-      setLanguage(lang);
-      languageMenu?.classList.remove("open");
-    });
-  });
-
-  document.addEventListener("click", (event) => {
-    if (!event.target.closest(".language-dropdown")) {
-      languageMenu?.classList.remove("open");
-    }
-  });
-</script> -->
+</script>

@@ -168,7 +168,13 @@ main {
   transition: transform 0.25s ease;
 }
 
-.faq-section details[open] summary span {
+.faq-arrow {
+  font-size: 24px;
+  transition: transform 0.25s ease;
+  display: inline-block;
+}
+
+.faq-section details[open] .faq-arrow {
   transform: rotate(180deg);
 }
 
@@ -178,6 +184,12 @@ main {
   padding: 0 0 22px;
   font-size: 17px;
   line-height: 1.5;
+}
+.faq-question {
+  color: #5f5e5e;
+}
+.faq-question:hover {
+  color: #000000;
 }
 @media (max-width: 800px) {
   .naturfonden,
