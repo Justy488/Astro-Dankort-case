@@ -5,22 +5,33 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  font-size: 64px;
 }
 h2 {
   font-family: "Unbounded", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
+  font-size: 40px;
 }
 h3 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 24px;
 }
 p {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 16px;
+}
+a {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
 }
