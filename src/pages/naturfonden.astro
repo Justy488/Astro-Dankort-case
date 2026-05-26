@@ -1,6 +1,8 @@
 ---
 import Faq from "../components/Faq.astro";
 import "../Style/naturfonden.css";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Headerr.astro";
 ---
 
 <html lang="en">
@@ -13,6 +15,7 @@ import "../Style/naturfonden.css";
     <title>Naturfonden</title>
   </head>
   <body>
+    <Header />
     <section class="naturfonden">
       <div class="nature-text">
         <h2>Den Danske Naturfond</h2>
@@ -29,5 +32,7 @@ import "../Style/naturfonden.css";
     </section>
 
     <Faq />
+    <Footer />
+    <script src="/js/language.js"></script>
   </body>
 </html>
