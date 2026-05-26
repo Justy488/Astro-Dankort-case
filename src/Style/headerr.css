@@ -188,4 +188,6 @@ nav {
   }
 
   nav.active .menu a {
-    font-
+    font-size: 24px;
+  }
+}
