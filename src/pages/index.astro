@@ -1,6 +1,6 @@
 ---
 import Headerr from "../components/Headerr.astro";
-import Footer from "../components/Footer.astro";
+import Footer from "../components/footer.astro";
 import "../Style/fonts.css";
 import "../Style/headerr.css";
 ---
@@ -31,7 +31,7 @@ import "../Style/headerr.css";
     </header>
     <!-- </Header> -->
     <main>
-      <!-- FORDELE SEKTION - tilføj klasser -->
+      <!-- sektionen for øremærkeinfo-->
 
       <section class="oermaerket-sektion">
         <div class="oermaerket-tekst">
@@ -41,7 +41,6 @@ import "../Style/headerr.css";
             til den danske natur, uden det koster dig ekstra
           </p>
           <div class="oermaerket-logoer">
-            <!-- din SVG her -->
             <div>
               <svg
                 width="481"
@@ -135,7 +134,6 @@ import "../Style/headerr.css";
               </svg>
             </div>
             <div class="logo-divider"></div>
-            <!-- dankort logo her -->
           </div>
           <a class="laes-mere-knap" href="">Læs mere</a>
         </div>
@@ -145,7 +143,7 @@ import "../Style/headerr.css";
         </div>
       </section>
 
-      <!-- DONATION SEKTION - tilføj klasse -->
+      <!-- donations counter sektion -->
       <section class="donation-sektion">
         <div class="donation-card-wrapper">
           <img src="pictures/donationimg.png" alt="Dankort donation tracker" />
@@ -166,18 +164,20 @@ import "../Style/headerr.css";
 
       <!-- Fordele -->
       <section class="fordele-sektion">
-        <!-- Lag 1: baggrund -->
+        <!-- Lag 1: baggrundsbilledet af blomster -->
         <img class="fordele-bg" src="/pictures/blomsterbg02.png" alt="" />
 
-        <!-- Lag 2: mobil/kort billede (højre side) -->
+        <!-- Lag 2: mobilbetaling billede (den står til højre side) -->
         <img class="fordele-mobil" src="/pictures/mobilklear01.svg" alt="" />
 
-        <!-- Lag 3: tekst (venstre side) -->
+        <!-- Lag 3: tekst (den står til min venstre side) -->
         <div class="fordele-tekst">
           <h2>Fordele med Dankort</h2>
           <p>
-            Med hvert køb går 1 øre til dansk natur. Dankort er også billigere for butikkerne, og virker offline i krisesituationer. Det er et ægte dansk produkt der styrker lokaløkonomien. En betaling der gør en konkret forskel – for din lomme, for
-            naturen og for fællesskabet.
+            Med hvert køb går 1 øre til dansk natur. Dankort er også billigere
+            for butikkerne, og virker offline i krisesituationer. Det er et ægte
+            dansk produkt der styrker lokaløkonomien. En betaling der gør en
+            konkret forskel – for din lomme, for naturen og for fællesskabet.
           </p>
           <a href="">Læs Mere</a>
         </div>
@@ -185,13 +185,13 @@ import "../Style/headerr.css";
       <!-- Naturfonden -->
 
       <section class="natur-sektion">
-        <!-- Lag 1: baggrund -->
+        <!-- Lag 1: baggrund og det her er af sand -->
         <img class="natur-bg" src="/pictures/sandbaggrund02.png" alt="" />
 
-        <!-- Lag 2: plante/logo billede -->
+        <!-- Lag 2: palmelogo billede -->
         <img class="natur-deko" src="/pictures/palmelogo.svg" alt="" />
 
-        <!-- Lag 3: indhold venstre -->
+        <!-- Lag 3: indhold om naturfonden -->
         <div class="natur-indhold">
           <h2 class="natur-titel">Naturfonden</h2>
           <p class="natur-beskrivelse">
@@ -204,6 +204,6 @@ import "../Style/headerr.css";
         </div>
       </section>
     </main>
-    <footer></footer>
+    <Footer />
   </body>
 </html>
