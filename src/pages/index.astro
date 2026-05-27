@@ -1,6 +1,6 @@
 ---
 import Headerr from "../components/Headerr.astro";
-import Footer from "../components/footer.astro";
+import Footer from "../components/Footer.astro";
 import "../style/forside.css";
 import "../Style/fonts.css";
 import "../Style/headerr.css";
@@ -19,16 +19,16 @@ import "../Style/headerr.css";
   <body>
     <Headerr />
     <section class="hero-section">
-      <h1>Hver Betaling Tæller</h1>
-      <video
-        loop
-        autoplay
-        muted
-        playsinline
-        src="/pictures/vidofsky.mp4"
-        width="100%"></video>
-      <div class="forside-knap01"><a href="/naturfonden">Naturfonden</a></div>
-      <div class="forside-knap02"><a href="/benefits">Tjek dit Kort</a></div>
+      <h1 data-da="Hver Betaling Tæller" data-en="Every Payment Counts">Hver Betaling Tæller</h1>
+
+      <video loop autoplay muted playsinline src="/pictures/vidofsky.mp4" width="100%"></video>
+
+      <div class="forside-knap01">
+        <a href="" data-da="Naturfonden" data-en="Nature Fund">Naturfonden</a>
+      </div>
+      <div class="forside-knap02">
+        <a href="" data-da="Tjek dit Kort" data-en="Check Your Card">Tjek dit Kort</a>
+      </div>
     </section>
     <!-- min header sektions -->
     <main>
@@ -36,44 +36,31 @@ import "../Style/headerr.css";
 
       <section class="oermaerket-sektion">
         <div class="oermaerket-tekst">
-          <h2>Øremærket</h2>
-          <p>
-            Hver gang du betaler med Dankort, donere din bank automatisk 1 øre
-            til den danske natur, uden det koster dig ekstra
+          <h2 data-da="Øremærket" data-en="Øremærket">Øremærket</h2>
+
+          <p
+            data-da="Hver gang du betaler med Dankort, donerer din bank automatisk 1 øre til den danske natur, uden at det koster dig ekstra."
+            data-en="Every time you pay with Dankort, your bank automatically donates 1 øre to Danish nature, without it costing you extra."
+          >
+            Hver gang du betaler med Dankort, donerer din bank automatisk 1 øre til den danske natur, uden at det koster dig ekstra.
           </p>
           <div class="oermaerket-logoer">
             <div>
-              <svg
-                width="481"
-                height="73"
-                viewBox="0 0 481 73"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M52.9695 52.7331L45.7057 41.2536V52.7331H41.9395V34.0859H45.4792L52.7641 45.5965V34.0859H56.5092V52.7331H52.9695Z"
-                  fill="black"></path>
-                <path
-                  d="M63.2467 49.2937L62.0984 52.7282H57.9688L64.7796 34.0811H68.9092L75.562 52.7282H71.2743L70.1471 49.2937H63.2467ZM66.718 38.8035L64.4161 45.7036H68.9725L66.718 38.8035Z"
-                  fill="black"></path>
-                <path
-                  d="M82.6364 37.8937V52.733H78.6226V37.8937H73.9082V34.061H87.3929V37.8937H82.6364Z"
-                  fill="black"></path>
+              <svg width="481" height="73" viewBox="0 0 481 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M52.9695 52.7331L45.7057 41.2536V52.7331H41.9395V34.0859H45.4792L52.7641 45.5965V34.0859H56.5092V52.7331H52.9695Z" fill="black"></path>
+                <path d="M63.2467 49.2937L62.0984 52.7282H57.9688L64.7796 34.0811H68.9092L75.562 52.7282H71.2743L70.1471 49.2937H63.2467ZM66.718 38.8035L64.4161 45.7036H68.9725L66.718 38.8035Z" fill="black"></path>
+                <path d="M82.6364 37.8937V52.733H78.6226V37.8937H73.9082V34.061H87.3929V37.8937H82.6364Z" fill="black"></path>
                 <path
                   d="M103.316 44.8997C103.316 49.8274 100.54 52.9446 96.1208 52.9446C91.7014 52.9446 88.8359 49.8274 88.8359 44.8997V34.0859H92.8497V44.8997C92.8497 47.432 94.2245 48.975 96.1419 48.975C98.0593 48.975 99.3234 47.432 99.3234 44.8997V34.0859H103.316V44.8997Z"
                   fill="black"></path>
                 <path
                   d="M113.372 47.4831H110.217V52.7282H106.203V34.0811H113.262C117.433 34.0811 119.825 36.4267 119.825 40.583C119.825 43.4326 118.808 45.4859 116.959 46.5747L120.272 52.7282H115.716L113.372 47.4831ZM113.256 43.7562C114.995 43.7562 116.006 42.7171 116.006 40.7447C116.006 38.7724 114.989 37.8142 113.256 37.8142H110.212V43.7562H113.256Z"
                   fill="black"></path>
-                <path
-                  d="M127.061 37.8129V42.1309H134.14V45.8578H127.061V52.7331H123.047V34.0859H134.751V37.8129H127.061Z"
-                  fill="black"></path>
+                <path d="M127.061 37.8129V42.1309H134.14V45.8578H127.061V52.7331H123.047V34.0859H134.751V37.8129H127.061Z" fill="black"></path>
                 <path
                   d="M152.697 43.3821C152.697 48.8139 149.041 52.9453 144.148 52.9453C139.254 52.9453 135.625 48.845 135.625 43.3821C135.625 37.9193 139.281 33.9248 144.148 33.9248C149.015 33.9248 152.697 37.9753 152.697 43.3821ZM139.734 43.407C139.734 46.5491 141.788 48.9757 144.2 48.9757C146.613 48.9757 148.578 46.5491 148.578 43.407C148.578 40.265 146.639 37.8944 144.2 37.8944C141.762 37.8944 139.734 40.265 139.734 43.407Z"
                   fill="black"></path>
-                <path
-                  d="M165.846 52.7331L158.583 41.2536V52.7331H154.816V34.0859H158.356L165.641 45.5965V34.0859H169.386V52.7331H165.846Z"
-                  fill="black"></path>
+                <path d="M165.846 52.7331L158.583 41.2536V52.7331H154.816V34.0859H158.356L165.641 45.5965V34.0859H169.386V52.7331H165.846Z" fill="black"></path>
                 <path
                   d="M179.325 34.0873C184.287 34.0873 187.716 37.8702 187.716 43.4077C187.716 48.9452 184.245 52.7282 179.167 52.7282H172.535V34.0811H179.325V34.0873ZM176.554 48.9515H179.42C181.88 48.9515 183.639 46.7116 183.639 43.4388C183.639 40.1661 181.79 37.8702 179.241 37.8702H176.559V48.9515H176.554Z"
                   fill="black"></path>
@@ -114,15 +101,11 @@ import "../Style/headerr.css";
                 <path
                   d="M451.374 72.1937H412.263C395.922 72.1937 382.631 56.0012 382.631 36.0956C382.631 16.19 395.922 0 412.261 0H451.372C467.709 0 481.001 16.1925 481.001 36.0956C481.001 55.9988 467.709 72.1937 451.372 72.1937M412.261 0.719721C396.249 0.719721 383.22 16.5909 383.22 36.0956C383.22 55.6003 396.247 71.4765 412.261 71.4765H451.372C467.384 71.4765 480.41 55.6053 480.41 36.0956C480.41 16.586 467.386 0.719721 451.374 0.719721H412.263H412.261Z"
                   fill="#231F20"></path>
-                <path
-                  d="M458.211 33.9367L471.216 52.7814C473.91 48.0397 475.492 42.2894 475.492 36.0984C475.492 29.5636 473.73 23.5194 470.756 18.6333L458.211 33.9392V33.9367Z"
-                  fill="#E31F28"></path>
+                <path d="M458.211 33.9367L471.216 52.7814C473.91 48.0397 475.492 42.2894 475.492 36.0984C475.492 29.5636 473.73 23.5194 470.756 18.6333L458.211 33.9392V33.9367Z" fill="#E31F28"></path>
                 <path
                   d="M421.357 17.0415C431.069 17.0415 438.387 20.0524 439.141 30.0214L449.362 17.039H469.716C465.288 10.7259 458.708 6.71387 451.374 6.71387H412.262C404.926 6.71387 398.344 10.7234 393.916 17.039H421.355L421.357 17.0415Z"
                   fill="#E31F28"></path>
-                <path
-                  d="M405.354 29.6084L401.885 41.226H415.879C420.017 41.226 421.268 39.1391 422.194 35.1221C423.109 31.1499 420.808 29.6084 417.981 29.6084H405.354Z"
-                  fill="#E31F28"></path>
+                <path d="M405.354 29.6084L401.885 41.226H415.879C420.017 41.226 421.268 39.1391 422.194 35.1221C423.109 31.1499 420.808 29.6084 417.981 29.6084H405.354Z" fill="#E31F28"></path>
                 <path
                   d="M449.446 54.3654L438.635 37.7222C436.636 49.0708 430.092 54.3654 417.825 54.3654H393.381C397.802 61.1343 404.624 65.485 412.261 65.485H451.372C459.009 65.485 465.826 61.1392 470.248 54.3679H449.444L449.446 54.3654Z"
                   fill="#E31F28"></path>
@@ -136,9 +119,8 @@ import "../Style/headerr.css";
             </div>
             <div class="logo-divider"></div>
           </div>
-          <a class="laes-mere-knap" href="https://dankort.dk/oremaerket"
-            >Læs mere</a
-          >
+
+          <a class="laes-mere-knap" href="" data-da="Læs mere" data-en="Read more"> Læs mere </a>
         </div>
 
         <div class="oermaerket-billed">
@@ -150,17 +132,24 @@ import "../Style/headerr.css";
       <section class="donation-sektion">
         <div class="donation-card-wrapper">
           <img src="pictures/donationimg.png" alt="Dankort donation tracker" />
-          <span class="donation-label">Følg donationerne</span>
+          <span class="donation-label" data-da="Følg donationerne" data-en="Follow the donations"> Følg donationerne </span>
         </div>
         <div class="donation-text">
-          <h3>Mange bække små</h3>
+          <h3 data-da="Mange bække små" data-en="Every small stream counts">Mange bække små</h3>
+
           <p>
-            Hver gang du bruger dit Dankort, donerer vi 1 øre til Den Danske
-            Naturfond. Det bliver til mere end
-            <span class="highlight">10 millioner kroner</span> hvert år, der går ubeskåret
-            til opkøb og udvikling af mere vild og varig natur i Danmark. Vi kalder
-            det Dankort Øremærket. Målet er ikke at forbruge mere, men at skabe mere
-            plads til den danske natur.
+            <span data-da="Hver gang du bruger dit Dankort, donerer vi 1 øre til Den Danske Naturfond. Det bliver til mere end " data-en="Every time you use your Dankort, we donate 1 øre to The Danish Nature Fund. This adds up to more than ">
+              Hver gang du bruger dit Dankort, donerer vi 1 øre til Den Danske Naturfond. Det bliver til mere end
+            </span>
+
+            <span class="highlight" data-da="10 millioner kroner" data-en="10 million kroner"> 10 millioner kroner </span>
+
+            <span
+              data-da=" hvert år, der går ubeskåret til opkøb og udvikling af mere vild og varig natur i Danmark. Vi kalder det Dankort Øremærket. Målet er ikke at forbruge mere, men at skabe mere plads til den danske natur."
+              data-en=" every year, which goes directly towards buying and developing more wild and lasting nature in Denmark. We call it Dankort Øremærket. The goal is not to consume more, but to create more space for Danish nature."
+            >
+              hvert år, der går ubeskåret til opkøb og udvikling af mere vild og varig natur i Danmark. Vi kalder det Dankort Øremærket. Målet er ikke at forbruge mere, men at skabe mere plads til den danske natur.
+            </span>
           </p>
         </div>
       </section>
@@ -175,14 +164,17 @@ import "../Style/headerr.css";
 
         <!-- tredje lag: tekst (den står til min venstre side) -->
         <div class="fordele-tekst">
-          <h2>Fordele med Dankort</h2>
-          <p>
-            Med hvert køb går 1 øre til dansk natur. Dankort er også billigere
-            for butikkerne, og virker offline i krisesituationer. Det er et ægte
-            dansk produkt der styrker lokaløkonomien. En betaling der gør en
-            konkret forskel – for din lomme, for naturen og for fællesskabet.
+          <h2 data-da="Fordele med Dankort" data-en="Benefits of Dankort">Fordele med Dankort</h2>
+
+          <p
+            data-da="Med hvert køb går 1 øre til dansk natur. Dankort er også billigere for butikkerne og virker offline i krisesituationer. Det er et ægte dansk produkt, der styrker lokaløkonomien. En betaling, der gør en konkret forskel – for din lomme, for naturen og for fællesskabet."
+            data-en="With every purchase, 1 øre goes to Danish nature. Dankort is also cheaper for shops and works offline in crisis situations. It is a true Danish product that strengthens the local economy. A payment that makes a real difference — for your wallet, for nature, and for the community."
+          >
+            Med hvert køb går 1 øre til dansk natur. Dankort er også billigere for butikkerne, og virker offline i krisesituationer. Det er et ægte dansk produkt der styrker lokaløkonomien. En betaling der gør en konkret forskel – for din lomme, for
+            naturen og for fællesskabet.
           </p>
-          <a href="/benefits">Læs Mere</a>
+
+          <a href="" data-da="Læs Mere" data-en="Read more">Læs Mere</a>
         </div>
       </section>
       <!-- Naturfonden -->
@@ -196,16 +188,22 @@ import "../Style/headerr.css";
 
         <!-- tredje lag: indhold om naturfonden -->
         <div class="natur-indhold">
-          <h2 class="natur-titel">Naturfonden</h2>
-          <p class="natur-beskrivelse">
-            Når du betaler med Dankort, støtter du den grønne omstilling – uden
-            ekstra omkostning. Sammen bevarer vi natur og miljø for fremtiden.
+          <h2 class="natur-titel" data-da="Naturfonden" data-en="The Nature Fund">Naturfonden</h2>
+
+          <p
+            class="natur-beskrivelse"
+            data-da="Når du betaler med Dankort, når du handler, bidrager du til den grønne omstilling uden at betale ekstra."
+            data-en="When you pay with Dankort while shopping, you contribute to the green transition without paying extra."
+          >
+            Når du betaler med dankort, når du handler, så bidrager du til den grønne omstilling uden at betale ekstra.
           </p>
           <img class="natur-stepguide" src="/pictures/stepguide06.svg" alt="" />
-          <a class="natur-laes-mere" href="/naturfonden">Læs mere</a>
+
+          <a class="natur-laes-mere" href="" data-da="Læs mere" data-en="Read more"> Læs mere </a>
         </div>
       </section>
     </main>
     <Footer />
+    <script is:inline src="/js/language.js"></script>
   </body>
 </html>

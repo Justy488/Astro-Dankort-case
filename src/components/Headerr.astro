@@ -10,13 +10,13 @@ const currentPath = Astro.url.pathname;
   <nav id="navMenu">
     <ul class="menu">
       <li>
+        <a href="/" class={currentPath === "/" ? "active" : ""} data-da="Hjem" data-en="Home"> Hjem </a>
+      </li>
+      <li>
         <a href="/naturfonden" class={currentPath === "/naturfonden" ? "active" : ""} data-da="Naturfonden" data-en="Nature Fund"> Naturfonden </a>
       </li>
       <li>
         <a href="/benefits" class={currentPath === "/benefits" ? "active" : ""} data-da="Fordele" data-en="Benefits"> Fordele </a>
-      </li>
-      <li>
-        <a href="/" class={currentPath === "/" ? "active" : ""} data-da="Hjem" data-en="Home"> Hjem </a>
       </li>
     </ul>
   </nav>

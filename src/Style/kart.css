@@ -129,6 +129,11 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  padding: 1em;
+}
+.baggrunds-video {
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
 }
 
 @media (max-width: 800px) {
