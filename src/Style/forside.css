@@ -313,9 +313,9 @@ header h1 {
 /* Lag 2 - mobil placeret til højre */
 .fordele-mobil {
   position: absolute;
-  right: 50px;
-  bottom: -10px;
-  height: 110%; /* stikker lidt ud */
+  right: 0;
+  bottom: 0; /* fjern den negative værdi */
+  height: 100%; /* reducér fra 110% */
   width: auto;
   z-index: 2;
 }
@@ -328,13 +328,6 @@ header h1 {
   top: 50%;
   transform: translateY(-50%);
   width: 45%;
-}
-
-.fordele-tekst {
-  position: relative;
-  z-index: 3;
-  width: 55%;
-  /* padding: 3rem 0 3rem 3rem; */
 }
 
 .fordele-tekst h2 {
