@@ -1,6 +1,5 @@
 ---
-import Header from "../components/header.astro";
-import City from "../components/by.astro";
+import "../style/benefits.css";
 ---
 
 <html lang="en">
@@ -30,56 +29,75 @@ import City from "../components/by.astro";
 
     <section class="green-background">
       <div class="tjek-dankort">
-        <div class="tjek-dankort_billede">
-          <img src="/images/dankort-card.png" alt="Dankort betalingskort" />
-        </div>
+        <div class="flexbox1">
+          <div class="mobile-heading-image">
+            <h2>Tjek om du betaler<br />med Dankort</h2>
+          </div>
 
-        <div class="tjek-dankort_tekst">
-          <h2>Tjek om du betaler<br />med dankort</h2>
+          <div class="flexbox2">
+            <div class="tjek-dankort_billede desktop-img">
+              <img src="public/pictures/gråtkortps2.png" alt="Dankort betalingskort" />
+            </div>
 
-          <ol>
-            <li>
-              Tjek om du har Dankort logoen på dit fysiske eller digitale
-              betalingskort
-            </li>
-            <li>Hvis svaret er JA: Tillykke, du har dankort</li>
-            <li>
-              Hvis svaret er NEJ: Klik på knappen nedenunder, og skaf dig
-              Dankort i dag
-            </li>
-          </ol>
+            <div class="tjek-dankort_tekst">
+              <ol>
+                <li>Tjek om du har Dankort logoen på dit fysiske eller digitale betalingskort</li>
+                <li>Hvis svaret er JA: Tillykke, du har Dankort!</li>
+                <li>Hvis svaret er NEJ: Klik på knappen nedenunder, og skaf dig Dankort i dag</li>
+              </ol>
+            </div>
 
-          <a class="button" href="#">Få dit Dankort i dag!</a>
+            <div class="tjek-dankort_billede mobile-img">
+              <img src="public/pictures/gråtkortps2.png" alt="Dankort betalingskort" />
+            </div>
+          </div>
+
+          <a class="dankort-knap" href="https://dankort.dk/dankort-i-apple-pay"> Få dit Dankort i dag! </a>
         </div>
       </div>
     </section>
+    <!-- festival -->
+    <section class="roskilde-festival">
+      <div class="roskilde-festival_indhold">
+        <div class="roskilde-festival_tekst">
+          <h2>Vind 2 pas til Roskilde<br />festivalen 2026!</h2>
+          <p>Tilmeld dig giveawayen og vær med i trækningen af to pas til Roskilde festival, for dig og en ven.</p>
+
+          <ol>
+            <li>Få Dankort på din eget kort</li>
+            <li>Inviter en ven som opretter Dankort</li>
+            <li>Tilmeld dig giveawayen</li>
+          </ol>
+
+          <a class="ros_knap" href="https://www.instagram.com/dankort.danmark/">Tilmeld dig her!</a>
+        </div>
+
+        <div class="ros-billede">
+          <img src="public/pictures/rosbillede-skarp.png" alt="Instagram opslag om Roskilde Festival giveaway" />
+        </div>
+      </div>
+    </section>
+    <!-- 3 gode grund delen -->
+    <section class="grunde">
+      <h2>3 gode grund til at<br class="linebreak" /> betale med Dankort</h2>
+      <section class="box wrapper-1">
+        <h3>1. Billigt for butikkerne</h3>
+        <p>Dankort er det billigste betalingsmiddel for langt de fleste butikker.</p>
+        <p>Når du betaler med Dankort, er du således med til at holde butikkernes omkostninger til betalinger nede.</p>
+        <p>Det er ikke kun en fordel for butikkerne i dit lokalområde - men også for dig som forbruger, da butikkernes omkostninger påvirker priserne.</p>
+      </section>
+      <section class="box wrapper-2">
+        <h3>2. Nemt og sikkert</h3>
+        <p>Det er lige så sikkert at betale med Dankort i Apple Pay som med det fysiske kort.</p>
+        <p>Når du betaler med Apple Pay, lagres kortnummeret aldrig på hverken din mobil eller på Apples servere.</p>
+        <p>Du skal heller ikke indtaste pinkode i forretningerne, da telefonen anvender face-id og derfor kan din pinkode heller ikke aflures. På nettet skal du ikke indtaste kortnummer og CVV, og derfor kan disse numre heller ikke opsnappes.</p>
+      </section>
+      <section class="box wrapper-3">
+        <h3>3. Dansk betalingsmiddel</h3>
+        <p>Dankort er udviklet af de danske banker til glæde og gavn for forbrugere og butikker i Danmark.</p>
+        <p>Dankort bliver af Nationalbanken betragtet som en del af den kritiske betalingsinfrastruktur.</p>
+        <p>Selvom Dankort i dag er ejet af den paneuropæiske betalingsvirksomhed Nexi, er betalingsinfrastrukturen dansk og drevet under Nets Danmark.</p>
+      </section>
+    </section>
   </body>
-  <!-- festival -->
-  <section class="roskilde-festival">
-    <div class="roskilde-festival_indhold">
-      <div class="festival-festival_tekst">
-        <h2>Vind 2 pas til Roskilde<br />festivalen 2026!</h2>
-        <p>
-          Tilmeld dig giveawayen og vær med i trækningen af to pas til Roskilde
-          festival, for dig og en ven.
-        </p>
-        <ol>
-          <li>Få Dankort på din eget kort</li>
-          <li>Inviter en ven som opretter Dankort</li>
-          <li>Tilmeld dig giveawayen</li>
-        </ol>
-
-        <a class="festival-festival_knap" href="/giveaway"> Tilmeld dig her </a>
-      </div>
-
-      <div class="festival-festival-billede">
-        <img
-          src="/images/roskilde-phone.png"
-          alt="Instagram opslag om Roskilde Festival giveaway"
-        />
-      </div>
-    </div>
-  </section>
-
-
 </html>
