@@ -21,23 +21,10 @@ main > section {
   margin-bottom: 12px;
 }
 
-/* SKAL ÆNDRES PÅ IGEN */
-/* Spacing mellem sektioner */
-/* main > section,
-main > div {
-  margin-bottom: 12px;
-} */
-
-/* forspacig, men ingen ændring - bug */
-/* .fordele-sektion,
-.natur-sektion {
-  margin: 12px 10px;
-} */
-
 /* ===== HEADER ===== */
 .hero-section {
   position: relative;
-  height: 600px; /* øget fra 500px for at give plads til nav */
+  height: 600px; /* øget fra 500px for at give plads til min nav */
   overflow: hidden;
 }
 
@@ -56,7 +43,7 @@ main > div {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -60%); /* lidt højere op pga nav */
+  transform: translate(-50%, -60%); /* lidt højere op også pga nav */
   color: white;
   font-size: 5rem;
   font-weight: 300;
@@ -154,7 +141,6 @@ main > div {
   color: #1a3a5c;
   letter-spacing: -0.02em;
   margin-bottom: 1.2rem;
-  font-family: Georgia, serif;
 }
 
 .oermaerket-sektion p {
@@ -186,6 +172,12 @@ main > div {
   font-size: 1rem;
   color: #333;
   text-decoration: none;
+}
+.laes-mere-knap:hover {
+  background: rgba(50, 47, 47, 0.6);
+  border-color: white;
+  color: white;
+  transition: background 0.2s ease;
 }
 
 .oermaerket-billed img {
@@ -238,12 +230,11 @@ main > div {
 
 /* ===== DONATION / MANGE BÆKKE SMÅ ===== */
 .donation-sektion {
-  background-color: #f5f3ee;
-  border-radius: 18px;
   padding: 40px 40px;
   margin: 10px;
+  border-top: 3px solid #cbc6ba;
+  border-bottom: 3px solid #cbc6ba;
 }
-
 .donation-card-wrapper {
   position: relative;
   width: fit-content;
