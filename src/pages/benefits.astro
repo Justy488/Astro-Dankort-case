@@ -1,16 +1,23 @@
 ---
 import Header from "../components/header.astro";
+import City from "../components/by.astro";
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.icon" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Fordele</title>
   </head>
+
+  <main>
+    <Header />
+    <City />
+  </main>
+
   <body>
     <section>
       <h1>Din Bydel</h1>
@@ -73,4 +80,6 @@ import Header from "../components/header.astro";
       </div>
     </div>
   </section>
+
+
 </html>
