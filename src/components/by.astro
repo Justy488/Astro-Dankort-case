@@ -1,5 +1,6 @@
 ---
 import byerData from "../data/by.json";
+import "../Style/kart.css";
 ---
 
 <section class="indsamling-container">
@@ -77,10 +78,6 @@ import byerData from "../data/by.json";
     background-size: cover;
     background-position: center;
     padding: 60px 40px;
-    font-family:
-      system-ui,
-      -apple-system,
-      sans-serif;
     color: #ffffff;
     border-radius: 20px;
   }
@@ -141,12 +138,7 @@ import byerData from "../data/by.json";
   }
 
   .display-boks {
-    background-color: rgba(
-      181,
-      195,
-      161,
-      0.9
-    ); /* Den grønne fargen fra bildet */
+    background-color: rgba(181, 195, 161, 0.9);
     border-radius: 30px;
     padding: 40px 30px;
     color: #ffffff;
@@ -173,8 +165,8 @@ import byerData from "../data/by.json";
     line-height: 1.1;
   }
 
-  /* Responsiv tilpasning for mobilskjermer */
-  @media (max-width: 900px) {
+  /* Mobilversjon*/
+  @media (max-width: 800px) {
     .indhold-wrapper {
       grid-template-columns: 1fr;
     }
@@ -182,7 +174,7 @@ import byerData from "../data/by.json";
       grid-template-columns: 1fr;
     }
     .display-boks {
-      order: -1; /* Legger den grønne boksen øverst på mobil */
+      order: -1; /* mobil */
     }
   }
 </style>
