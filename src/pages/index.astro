@@ -1,6 +1,7 @@
 ---
 import Headerr from "../components/Headerr.astro";
 import Footer from "../components/footer.astro";
+import "../style/forside.css";
 import "../Style/fonts.css";
 import "../Style/headerr.css";
 ---
@@ -17,7 +18,7 @@ import "../Style/headerr.css";
   </head>
   <body>
     <Headerr />
-    <header>
+    <section class="hero-section">
       <h1>Hver Betaling Tæller</h1>
       <video
         loop
@@ -28,7 +29,7 @@ import "../Style/headerr.css";
         width="100%"></video>
       <div class="forside-knap01"><a href="">Naturfonden</a></div>
       <div class="forside-knap02"><a href="">Tjek dit Kort</a></div>
-    </header>
+    </section>
     <!-- min header sektions -->
     <main>
       <!-- sektionen for øremærkeinfo-->
