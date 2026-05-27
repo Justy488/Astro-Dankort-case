@@ -35,13 +35,13 @@ main > div {
 } */
 
 /* ===== HEADER ===== */
-header {
+.hero-section {
   position: relative;
   height: 600px; /* øget fra 500px for at give plads til nav */
   overflow: hidden;
 }
 
-header video {
+.hero-section video {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -52,7 +52,7 @@ header video {
   background-color: white;
 }
 
-header h1 {
+.hero-section h1 {
   position: absolute;
   top: 50%;
   left: 50%;
