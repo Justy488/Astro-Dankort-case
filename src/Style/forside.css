@@ -107,7 +107,7 @@ main > section {
     /* height: 500px; */
   }
 
-  header h1 {
+  .hero-sektion h1 {
     font-size: 3rem;
     white-space: normal;
     transform: translate(-50%, -70%);
